@@ -2,6 +2,10 @@
 
 # SpaceX Falcon 9 First Stage Landing Prediction
 
+<img src="images/falcon9_landing.png" alt="Falcon 9 first stage performing a propulsive landing" width="520">
+
+<sub>Image: Falcon 9 first stage landing, taken from the IBM Data Science Professional Certificate lab notebook.</sub>
+
 **Can we predict whether a Falcon 9 booster will land successfully — before the rocket even launches?**
 
 An end-to-end data science project: from REST API and web scraping, through SQL and visual analytics, to interactive maps, a live dashboard, and machine learning classification.
@@ -192,9 +196,17 @@ Notebook `05` explores how the landing outcome relates to flight number, payload
 
 ### Geospatial analysis with Folium
 
-Notebook `06` maps every launch site, marks each launch as a success (green) or failure (red) using marker clusters, and measures the distance from a launch site to its nearest coastline, railway, highway, and city.
+Notebook `06` uses Folium to answer where the launch sites are and why they were built there.
+
+**Global location map.** All launch sites are plotted on a world map, each with a circle and a label. The sites fall into two clusters in the United States: three in Florida (CCAFS LC-40, CCAFS SLC-40, and KSC LC-39A) and one in California (VAFB SLC-4E). All of them sit on the coast.
+
+![Folium global launch site locations](images/folium_global_launch_sites.png)
+
+**Launch outcomes per site.** Each launch is marked as a success (green) or failure (red) with marker clusters, which makes it easy to compare site performance.
 
 ![Folium launch sites map](images/folium_launch_sites.png)
+
+**Proximity analysis.** The distance from a launch site to its nearest coastline, railway, highway, and city is measured and drawn on the map.
 
 ![Folium proximity analysis](images/folium_proximity.png)
 
